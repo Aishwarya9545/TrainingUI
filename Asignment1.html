@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML </title>
+</head>
+
+<body>
+    <h3> Q.1 HTML FORMATTING TAGS</h3>
+    <p>This is <b>bold</b></p>
+    <p>This is <strong> strong</strong></p>
+    <p>This is <i>italic</i> </p>
+    <p>This is <em>emphasized</em>
+    <p>
+    <p>This is <mark>highlighted<mark> </p>
+    <p>This is computer </p>
+    <p>This is <small>smaller</small> </p>
+    <p>This is <sub>subscript</sub> and <sup>superscript</sup> </p>
+    <p>This is <del> deleted</del></p>
+    <p> This is <ins>inserted</ins> </p>
+    <hr>
+    <!-- hr = horizontal line -->
+
+    <h3> Q.2 Ordered list Types</h3>
+
+    <!-- <dl>Default</dl> -->
+    <!--  ol=Ordered - ul=unordered->
+    <ol>
+
+        <dl>Default</dl>
+
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ol>
+
+<!-- for the lower case we need "a" -->
+    <dl>Lower Alphabets </dl>
+    <ol type="a">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ol>
+    <!-- for the uppr case we need "A" -->
+    <dl>Upper Alphabets </dl>
+    <ol type="A">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ol>
+
+    <!-- for the lower roman case we need "i" -->
+    <dl>Lower Roman </dl>
+    <ol type="i">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ol>
+    <!-- for the uppr roman case we need "I" -->
+    <dl>Upper Roman </dl>
+    <ol type="I">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ol>
+
+    <hr>
+
+    <h3> Q.3 Webpage to include image HTML tag</h3>
+
+    <h2>Images with Subtitles</h2>
+    <!-- <figure>
+    <img src="New folder\map-of-asia.jpg" alt="">
+    <figcaption>Fig.1 - map of Asia</figcaption>
+  </figure> -->
+  <!-- /////////////////////////// most import=== when i need to select the image (url ),they are definately save in the .jpg extension and same folder to an appropriate   -->
+
+  <!-- we need to used figure tag for the image selection   and when we need to caption for the above image we are used to figcaptiontag-->
+    <figure>
+        <img src="New folder\OIP (1).jpg" alt="">
+        <figcaption>Fig.1 - map of world</figcaption>
+    </figure>
+
+    <figure>
+        <img src="New folder\OIP (3).jpg" alt="">
+        <figcaption>Fig.2- map of asia</figcaption>
+    </figure>
+
+    <figure>
+        <img src="New folder\OIP (4).jpg" alt="">
+        <figcaption>Fig.3 - map of India</figcaption>
+    </figure>
+
+    <figure>
+        <img src="New folder\th (1).jpg" alt="">
+        <figcaption>Fig.4 - map of china</figcaption>
+    </figure>
+
+
+
+    <hr>
+    <h3>Q.4 Create employee registrastion and login webpage</h3>
+
+    <title>HTML Table</title>
+    <!-- table tag  -->
+    </head>
+
+    <body>
+        <form method="" action="">
+            <table border="1" align="center" width="400" bgcolor="white">
+                <caption>Registration form</caption>
+                <tr>
+                    <th>Enter your first Name</th>
+                    <td><input type="text" /></td>
+
+                    <!-- name="fn" id="fn1" maxlength="10" title="enter your first name"
+                            placeholder="enter your first name" required  -->
+                </tr>
+                <tr>
+                    <th>Enter your last Name</th>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <th>Enter your Password</th>
+                    <td><input type="password" /></td>
+                </tr>
+                <tr>
+                    <th>Re-Enter Password</th>
+                    <td><input type="password" /></td>
+                </tr>
+                <tr>
+                    <th>Enter your Email</th>
+                    <td><input type="email" /></td>
+                </tr>
+                <tr>
+                    <th>Enter your Mobile</th>
+                    <td><input type="number" /></td>
+                </tr>
+                <tr>
+                    <th>Enter your Address</th>
+                    <td><textarea rows="5" cols="20"></textarea></td>
+                    <!-- textarea = what ever area we need for eg. adress  (rows and cols ) selected-->
+                </tr>
+                <tr>
+                    <th>Select your Gender</th>
+                    <td>male<input type="radio" name="g" value="m" />Female<input type="radio" name="g" value="f" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select your hobbies</th>
+                    <td>hobby1<input type="checkbox" name="x[]" value="h" />hobby2<input type="checkbox" name="x[]"
+                            value="h2" />
+                        <!-- hobby3<input type="checkbox" name="x[]" value="h3" /> -->
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select your DOB</th>
+                    <td><input type="date" /></td>
+                </tr>
+                <tr>
+                    <th>Select your Country</th>
+                    <td><select name="country">
+                            <option>
+
+                                <!-- Select your country -->
+                            </option>
+                            <option value="1">India</option>
+                            <option value="2">Pakistan</option>
+                            <option value="3">china</option>
+                            <option value="4">Nepal</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th>Upload your pic</th>
+                    <td><input type="file" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Save My Data" /><input type="reset"
+                            value="Reset Data" /></td>
+                </tr>
+            </table>
+        </form> <a href=" Assignment.html"> login page</a>
+    </body>
+
+</html>
+
+<br>
+<!-- <form name="regForm">
+        <label>Username: <input type="text" id="username"></label>
+        <label>Password: <input type="password" id="pwd"></label>
+        <input type="submit" class="login" value="Log In" onclick="validation()" formtarget="_blank"> -->
+<!-- </form> -->
+<hr>
+<h3>Q.5 Create an HTML file</h3>
+<h1>Create an HTML file containing a heading and two paragraphs of text</h1>
+
+<p><i>Use the HTML tags and in this exercise.</i></p>
+<p><i> the texts in the heading and paragraphs you can use any texts you like. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Harum quae consectetur eligendi amet consequuntur reprehenderit, animi magnam
+        labore molestias, repellendus pariatur expedita impedit nesciunt Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Inventore, fuga dolorum facere sequi molestias fugiat odio commodi nihil omnis. Labore neque
+        deserunt minus odio voluptates id quisquam eligendi autem cum.Lorem.lorem24 Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Harum, maiores itaque ipsam, reprehenderit dolore, nulla nostrum corporis unde
+        illum accusantium ratione. Delectus dolores eligendi, a nam quis dicta similique harum.
+    </i></p>
+
+<!-- Adding an unordered list to this web page. 
+     An unordered list typically contains a number of list items that can be specified with tags-->
+     <dl>unordered</dl>
+<ul type="1">
+    <li>Chocolate Cake</li>
+    <li>Black Forest Cake</li>
+    <li>Pineapple Cake</li>
+</ul>
+
+<!-- After you have created your unordered list, 
+     check out what happens when you convert it to an ordered list by replacing the tags and with and, respectively.-->
+     <dl>ordered</dl>
+<ol type="1">
+    <li>Chocolate Cake</li>
+    <li>Black Forest Cake</li>
+    <li>Pineapple Cake</li>
+</ol>
+
+<!--Add an image to your web page.
+     In this exercise you must use the Error! Filename not specified.tag.
+     As an image, you can use any .jpg or .png file you find on the Internet.-->
+<figure>
+    <img src="New folder\flowers.jpg" onerror="this.onerror=null; this.src='img_not_found.png'" >
+     <!-- alt="image " width="100"
+        height="120"> -->
+    <figcaption>Fig.1 - Nature, Flowers.</figcaption>
+</figure>
+<hr>
+<!-- <h3>Q.6 </h3> -->
+<br>
+<hr>
+
+<h3>Q.7 Tooltip</h3>
+<a href=""></a>
+<div class="tooltip">World Map
+    <span class="tooltiptext">This leads you to another page</span>
+  </div>
+
+<br>
+<hr>
+<!-- <h3>Q.8</h3> -->
+<br>
+<hr>
+<h3>Q.9 . To embed a simple audio/video file onto the page.</h3>
+
+<div>
+
+    <!--Add the path to the audio file to an appropriate attribute to embed it on the page. 
+    The audio is called audio.mp3, and it is in a folder inside the current folder called media.
+-->
+    <p><b>Audio</b></p>
+
+    <!-- • Add an attribute to make browsers display some default controls. 
+         • Add some appropriate fallback text for browsers that don't support <audio>.-->
+    <audio controls autoplay muted>
+        <source src="media/audio.mp3" type="audio/mpeg">
+        <!-- Add some appropriate fallback text for browsers that don't support <audio>.-->
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<br><br>
+
+<div>
+    <p><b>Video</b></p>
+    <!--
+        • Add some appropriate fallback text for browsers that don't support <video>. 
+        • Add multiple sources, containing the paths to the video files. 
+          The files are called video.mp4 and video.webm, and are in a folder inside the current folder called media. 
+        • Give the <video> a width and height equal to its intrinsic size (320 by 240 pixels).
+        • Make the video muted by default.      
+     -->
+    <video width="320" height="240" controls muted>
+        <source src=/media/small.webm type=video/webm>
+        <source src=/media/small.mp4 type=video/mp4>
+        <!--• Display the text tracks contained in the media folder, in a file called subtitles_en.vtt, when the video-->
+        <track src="/media/subtitles_en.vtt" label="English" kind="captions" srclang="en-us" default >
+        Your browser does not support the video tag.
+    </video>
+      <!--  kind = subtitle or caption -->
+      <!-- srclang + source lang  -->
+
+    <hr> 
+    <h3>Q.10 dropdown </h3>
+
+    <table class=""> Product
+        <!-- <td></td> -->
+        <!-- <td>Services</td>
+    </table><table>Services</table><table> Information</table> -->
+<div> 
+    
+    <select name="Product" id="health">
+        <option value=""></option>
+        <option value=" medical">medical</option>
+        <option value="IT"> IT</option>
+        <option value="Agreeculture"> Agreeculture</option>
+        <option value="Astology">Astology</option>
+        <option value="zoology">zoology</option>
+
+
+        
+
+</select>
+</div>
+<table class=""> Services
+    <td></td>
+    <!-- <td>Services</td>
+</table><table>Services</table><table> Information</table> -->
+<div> 
+
+<select name="Product" id="health">
+    <option value=""></option>
+    <option value=" medical">Eduipment</option>
+    <option value="IT"> Networking</option>
+    <option value="Agreeculture"> Food</option>
+    <option value="Astology">Online astology</option>
+    <option value="zoology">Animals and kingdoms</option>
+
+
+    
+
+</select>
+</div>
+<table class=""> Information
+    <td></td>
+    <!-- <td>Services</td>
+</table><table>Services</table><table> Information</table> -->
+<div> 
+
+<select name="Product" id="health">
+    <option value=""></option>
+    <option value=" medical">Policies ,Domains</option>
+    <option value="IT"> Data science, AI,Ml, IOT</option>
+    <option value="Agreeculture"> Dairy Product</option>
+    <option value="Astology">forecasting,Tarotreading,Divination</option>
+    <option value="zoology">Animal Behaviours,Genetisam</option>
+
+
+    
+
+</select>
+</div>
+ <hr>
+ <h3>Q.11</h3>
+ 
+
+</body>
+
+</html>
